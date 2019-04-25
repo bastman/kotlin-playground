@@ -4,6 +4,8 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import java.time.Duration
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+//import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
+
 //import com.avast.gradle.dockercompose.
 
 
@@ -87,6 +89,16 @@ dependencies {
 
     // fp
     implementation("org.funktionale:funktionale-all:1.2")
+    val arrow_version = "0.9.0"
+    implementation("io.arrow-kt:arrow-core-data:$arrow_version")
+    implementation("io.arrow-kt:arrow-core-extensions:$arrow_version")
+            implementation("io.arrow-kt:arrow-syntax:$arrow_version")
+            implementation("io.arrow-kt:arrow-typeclasses:$arrow_version")
+            implementation("io.arrow-kt:arrow-extras-data:$arrow_version")
+            implementation("io.arrow-kt:arrow-extras-extensions:$arrow_version")
+    //kapt("io.arrow-kt:arrow-meta:$arrow_version")
+
+
 
     // test: junit5
     val junitVersion = "5.3.1"
