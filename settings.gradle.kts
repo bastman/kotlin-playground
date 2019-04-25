@@ -1,4 +1,4 @@
-include("rest-api")
+include("rest-api","stuff")
 
 // "copy pasta" from: https://github.com/ilya40umov/KotLink/blob/master/settings.gradle.kts
 
