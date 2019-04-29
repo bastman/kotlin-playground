@@ -13,6 +13,13 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    // logging
+    implementation("io.github.microutils:kotlin-logging:1.6.+")
+    implementation("net.logstash.logback:logstash-logback-encoder:5.+")
+    val logbackJsonVersion = "0.1.5"
+    implementation("ch.qos.logback.contrib:logback-json-classic:$logbackJsonVersion")
+    implementation("ch.qos.logback.contrib:logback-jackson:$logbackJsonVersion")
+
     // serialization: jackson json
     val jacksonVersion =  "2.9.8"
     implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
